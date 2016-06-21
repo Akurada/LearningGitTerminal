@@ -24,7 +24,7 @@ public class Game {
 				if (answer.equalsIgnoreCase(capital)) {
 					System.out.println("Correct!");
 					correct++;
-				}
+				} 
 				else {
 					System.out.println("No, the answer is " + capital);	
 				}
