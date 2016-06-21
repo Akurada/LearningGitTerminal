@@ -13,7 +13,7 @@ public class Game {
 			System.out.println("Correct!");
 		}
 		else {
-			System.out.println("No the capital is " + capital);
+			System.out.println("No the capital is: " + capital);
 		}
 
 	}
