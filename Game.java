@@ -35,6 +35,6 @@ public class Game {
 		} catch (IOException e) {
 		e.printStackTrace();
 		}
-		System.out.println("You scored: " + correct + " out of: " + total);
+		System.out.println("You scored: " + correct + " out of: " + total + "!");
 	}
 }
