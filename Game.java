@@ -12,7 +12,7 @@ public class Game {
 		int total = 0;
 		int correct =0;
 
-		try (BufferedReader br = new BufferedReader(new FileReader("capitals2.csv"))){
+		try (BufferedReader br = new BufferedReader(new FileReader("Capitals2.csv"))){
 			
 			String line;
 			while ((line = br.readLine()) != null) {
