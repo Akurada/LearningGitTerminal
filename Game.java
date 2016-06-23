@@ -6,9 +6,13 @@ import java.util.*;
 import java.io.FileNotFoundException;
 
 class Game {
+	public static void printHelp() {
+		System.out.println("Guess the capital city");
+		System.out.println("type 'EXIT' to stop the game, or 'HELP' to display this text.");
+	}
+
+
 	public static void main(String[] args) {
-		System.out.println("Guess the capital city: ");
-		System.out.println("Type Exit to stop the game");
 		Console console = System.console();
 		int total = 0;
 		int correct = 0;
@@ -16,17 +20,26 @@ class Game {
 		Random rand = new Random();
 
 		try (BufferedReader br = new BufferedReader(new FileReader("capitals2.csv"));) {
-		
+			String answer = null;
 			String line;
 			while ((line = br.readLine()) != null) {
 				String[] cols = line.split(",");
 				String country = cols[0];
 				String capital = cols[1];
-				String answer = console.readLine("What is the capital of " + country + "? ");
-				
+				answer = console.readLine("What is the capital of " + country + "? ");
+				 
 				if(answer.equalsIgnoreCase("exit")){
 					break;
 				}
+
+			do {
+				answer = console.readLine("What is the capital of " + country + "? ");
+				if (answer.equalsIgnoreCase("help")) {
+					printHelp();
+				}
+			}
+			while (answer.equalsIgnoreCase("help"));
+
 				if (answer.equalsIgnoreCase(capital)) {
 					switch (rand.nextInt()%3) {
 						case 0: System.out.println("Well Done!");
