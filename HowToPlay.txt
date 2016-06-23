@@ -1,5 +1,5 @@
 Capital City Guessing Game
 --------------------------
-Type "play" to start the game.
+Type "play" to begin the game.
 You will be asked a series of questions about countries and their capital cities.
 Answer as many as you can. Good luck!
