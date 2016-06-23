@@ -20,7 +20,7 @@ class Game {
 				String country = cols[0];
 				String capital = cols[1];
 				String answer = console.readLine("What is the capital of " + country + "? ");
-				total++;
+				
 				if(answer.equalsIgnoreCase("exit")){
 					break;
 				}
@@ -31,6 +31,7 @@ class Game {
 				else {
 					System.out.println("No, the answer is " + capital + "!");	
 				}
+				total++;
 			}
 		}
 	catch (FileNotFoundException e) {
