@@ -2,6 +2,7 @@ import java.io.Console;
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
+import java.util.*;
 import java.io.FileNotFoundException;
 
 class Game {
@@ -12,6 +13,8 @@ class Game {
 		int total = 0;
 		int correct = 0;
 		
+		Random rand = new Random();
+
 		try (BufferedReader br = new BufferedReader(new FileReader("capitals2.csv"));) {
 		
 			String line;
@@ -25,7 +28,15 @@ class Game {
 					break;
 				}
 				if (answer.equalsIgnoreCase(capital)) {
-					System.out.println("Correct!");
+					switch (rand.nextInt()%3) {
+						case 0: System.out.println("Well Done!");
+						break;
+						case 1: System.out.println("That's Right!");
+						break;
+						case 2: System.out.println("Correct!");
+						break;
+					}
+					
 					correct++;
 				}
 				else {
