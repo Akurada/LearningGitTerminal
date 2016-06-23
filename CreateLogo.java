@@ -17,7 +17,7 @@ class CreateLogo {
 		g.setBackground(Color.black);
 		g.clearRect(0, 0, width, height);
 
-		g.setPaint(Color.green);
+		g.setPaint(Color.blue);
 		g.fillOval(-200, -100, 400, 400);
 
 		g.setPaint(Color.red);
