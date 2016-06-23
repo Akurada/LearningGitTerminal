@@ -31,9 +31,9 @@ class Game {
 					switch (rand.nextInt()%3) {
 						case 0: System.out.println("Well Done!");
 						break;
-						case 1: System.out.println("That's Right!");
+						case 1: System.out.println("Correct!");
 						break;
-						case 2: System.out.println("Correct!");
+						case 2: System.out.println("That's Right!");
 						break;
 					}
 					
