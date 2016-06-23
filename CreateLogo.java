@@ -14,10 +14,10 @@ class CreateLogo {
 		Font font = new Font("Arial", Font.BOLD, 24);
 		g.setFont(font);
 
-		g.setBackground(Color.white);
+		g.setBackground(Color.yellow);
 		g.clearRect(0, 0, width, height);
 
-		g.setPaint(Color.red);
+		g.setPaint(Color.orange);
 		g.fillOval(-200, -100, 400, 400);
 
 		g.setPaint(Color.red);
